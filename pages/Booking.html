@@ -1,166 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="../styles/booking.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box">
+                <h1>Booking</h1>
+                <p>silahkan isi booking jika ingin melakukan konsultasi.</p>
+            </div>
+            <form action="">
+                <div>
+                    <label>
+                        Nama
+                    </label>
+                    <input type="text" placeholder="nama" required>
+                </div>
+                
+                <div>
+                    <label>
+                    NIK
+                    </label>
+                    <input type="text" placeholder="NIK" required>
+                </div>
+                
+                <div>
+                    <label>
+                    Nomor HP
+                    </label>
+                    <input type="text" placeholder="+62***" required>
+                </div>
 
-section {
-  background: url("../images/7955.jpg");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  background-size: cover;
-}
-
-.container {
-  width: 750px;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  background: #fff;
-  -webkit-box-shadow: 0 0 10px #0005;
-          box-shadow: 0 0 10px #0005;
-}
-
-form {
-  padding: 50px;
-}
-
-form div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-form label, form input, form select {
-  display: block;
-  width: 100%;
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form label {
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-form input, form select {
-  display: block;
-  padding: 4px 0px;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #ddd;
-  width: 100%;
-}
-
-form input::-webkit-input-placeholder {
-  color: #ddd;
-}
-
-form input:-ms-input-placeholder {
-  color: #ddd;
-}
-
-form input::-ms-input-placeholder {
-  color: #ddd;
-}
-
-form input::placeholder {
-  color: #ddd;
-}
-
-form input[type="date"] {
-  color: #000;
-}
-
-form input:focus {
-  color: #000;
-  outline: none;
-  border-bottom: 1px solid #000;
-}
-
-form .diagram {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px auto;
-}
-
-form button {
-  padding: 6px 15px;
-  font-size: 15px;
-  text-transform: uppercase;
-  background: #000;
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 50px;
-  -webkit-transition: linear .3s all;
-  transition: linear .3s all;
-}
-
-form button:hover {
-  background: #333;
-  -webkit-transition: linear .3s all;
-  transition: linear .3s all;
-}
-
-form a {
-  color: #333;
-  text-decoration: none;
-}
-
-.box {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0009), to(#0009)), url("../images/904.jpg");
-  background-image: linear-gradient(#0009, #0009), url("../images/904.jpg");
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-}
-/*# sourceMappingURL=booking.css.map */
+                <div>
+                    <label>Kota Asal</label>
+                    <select>
+                        <option selected="selected">Balikpapan</option>
+                        <option>Luar Balikpapan</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label>
+                    Tanggal Berkonsultasi
+                    </label>
+                    <input type="date" placeholder="DD-MM-YY" required>
+                </div>
+            
+            <div>
+                <label>Pilih Poli</label>
+                <select>
+                    <option selected="selected">Poli Umum</option>
+                    <option>Poli kandungan</option>
+                    <option>Poli Anak</option>
+                    <option>Poli Gigi</option>
+                </select>
+            </div>
+            <div class="diagram">
+                <button type="submit">Book</button>
+                <a href="Syarat&ketentuan.html">syarat & ketentuan.</a>            
+            </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
