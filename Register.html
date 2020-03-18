@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Register </title>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Registerstyle.css">
 </head>
 <body>
-   
-  <div id="header">
-    <h3>Klinik Kelompok 4</h3>
-    <TABLE> 
-    	<table align="center">
-        <tr>
-            <td>Nama Lengkap</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>NIK</td>
-            <td><input type="text" name="NIK"></td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td><input type="Password" name="Password"></td>
-        <tr>
-            <td>Alamat</td>
-            <td><textarea name="alamat">Jl. Suka-suka</textarea></td>
-		</tr>
-        <tr>
-        	<td>Jenis Kelamin</td>
-            <td><input type="radio" name="Jenis Kelamin"/>Pria<br />
-<input type="radio" name="Jenis Kelamin" checked/>Wanita<br />
-		</td>
-        </tr>
-    <form action="Index.html">
-        <tr>
-            <td align="center" rowspan="2"><input type="submit" name="DAFTAR"value="Daftar"></td>
-        </tr>  
-    </form> 
-    </table>
-    </TABLE>
-  </div>
-     
-     
+    <form action="Index1.html" method="post">
+    <h1>Form Pendaftaran</h1>
+
+    <fieldset id="UserDataFields">
+        <legend>Data pengguna (wajib diisikan seluruhnya)</legend>
+
+        <div class="control-group">
+            <label for="Register[Username]">Nama Lengkap</label>
+            <input type="text"
+                   name="Register[Username]"
+                   id="RegisterUsername" required>
+        </div>
+
+        <div class="control-group">
+            <label for="Register[NIK]">NIK</label>
+            <input type="text"
+                   name="Register[NIK]"
+                   id="RegisterNIK" required>
+        </div>
+
+        <div class="control-group">
+            <label for="Register[Password]">Password</label>
+            <input type="password"
+                   name="Register[Password]"
+                   id="RegisterPassword" required>
+        </div>
+
+        <div class="control-group">
+            <label for="Register[Email]">Email</label>
+            <input type="email"
+                   name="Register[Email]"
+                   id="RegisterEmail" required>
+        </div>
+
+        <div class="control-group">
+            <label for="Register[JenKel]">Jenis Kelamin</label>
+            <select id="RegisterJenKel" name="Register[JenKel]">
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset id="FormAction">
+        <legend>Selesai mengisikan form?</legend>
+        <div class="input-group">   
+            <input type="reset" value="Hapus Form">
+            <input type="submit" value="Daftar">
+        </div>
+    </fieldset>
+</form>
 </body>
 </html>
