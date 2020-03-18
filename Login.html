@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+    <title>SELAMAT DATANG</title>
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-	<div align="center">
-		<h1>Silahkan Login</h1>
-		<form action="Register.html">
-			<table >
-				<tr>
-					<th >NIK</th>
-					<td><input type="text" name="nik"></td>
-				</tr>
-				<tr>
-					<th>Password</th>
-						<td><input type="password" name="pass"></td>
-				</tr>
-				<tr>
-					<th colspan='2'><input type="submit" name="login"></th>
-				</tr>
-				<tr>
-					<td colspan="2" align="center">Belum punya Akun? <a href="Register.html" >Daftar</a></td>
-				</tr>
-			</table>
-		</form>
-	</div>
+    <form action="Index.html">
+        <div class="login">
+            <h2>KLINIK ITK</h2>
+            <div class="input-group">
+                <input type="text" name="NIK" required="">
+                <span>NIK</span>
+            </div>
+            <div class="input-group">
+                <input type="password" name="pass" required="">
+                <span>PASSWORD</span>
+            </div>
+            <div class="input-group">
+                <input type="submit" name="Login" value="LOGIN">
+                <p>Belum Punya Akun ? <a href="Register.html">DAFTAR</a></p>
+            </div>
+        </div>
+        
+    </form>
 </body>
 </html>
