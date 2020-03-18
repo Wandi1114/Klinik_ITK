@@ -1,0 +1,47 @@
+ body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    font-family: sans-serif;
+    background: url(bg.jpg) center no-repeat ;
+
+}
+
+.jadwal h2
+{
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.jadwal
+{
+    background: #fff ;
+    width: 350px;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    border: none;
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%,-50%);
+}
+.jadwal select
+{
+     background : #2693ce;
+     color      : #fff;
+     padding    : 10px;
+     width      : 250px;
+     height     : 50px;
+     border     : none;
+     font-size: 20px;
+     box-shadow: 0 5px 25px rgba(0,0,0,.5);
+     -webkit-appearance:  button ;
+     outline: none ;
+}
