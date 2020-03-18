@@ -1,0 +1,41 @@
+body {
+  background-image: url("../images/344.png");
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div {
+  background-color: rgba(255, 255, 255, 0.137);
+  width: 600px;
+  padding: 50px;
+  -webkit-box-shadow: 0 0 10px #0008;
+          box-shadow: 0 0 10px #0008;
+  font-size: 18px;
+}
+
+a {
+  padding: 6px 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  -webkit-transition: linear .3s all;
+  transition: linear .3s all;
+  text-decoration: none;
+}
+/*# sourceMappingURL=Syarat&ketentuan.css.map */
