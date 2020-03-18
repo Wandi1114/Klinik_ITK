@@ -1,0 +1,96 @@
+$warnaBG :rgba(235, 246, 255, 0.87);
+$secBG : #55bada;
+$logo: url(../icons/Call/Doctor.ico);
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url("../images/BGUtama.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    align-items: center;
+}
+.login{
+    background-color: $warnaBG;
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.login h2{
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .input-group{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.login .input-group input{
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.login .input-group span{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 0px;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span{
+    top:-20px;
+    left: 20px;
+    font-size: 20px;
+    background-color: $secBG;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.login .input-group input[type="submit"]{
+    background-color: $warnaBG;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35%;
+    transition: 0.5s;
+}
+.login .input-group input[type="submit"]:hover{
+    width: 100%;
+    background-color: $secBG;
+    color: #fff;
+}
+.login .input-group p a{
+    background-color: $warnaBG;
+    border: 5px solid $warnaBG;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    width: 35%;
+    transition: 0.2s;
+}
+.login .input-group p a:hover{
+    background-color: #00ccff;
+    border:10px solid #00ccff ;
+    color:#fff;
+}

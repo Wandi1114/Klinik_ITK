@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  background-image: url("../images/BGUtama.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login {
+  background-color: rgba(235, 246, 255, 0.87);
+  width: 350px;
+  text-align: center;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.login h2 {
+  margin: 0 0 20px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.login .input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.login .input-group input {
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.login .input-group span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  padding: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span {
+  top: -20px;
+  left: 20px;
+  font-size: 20px;
+  background-color: #55bada;
+  padding: 2px 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.login .input-group input[type="submit"] {
+  background-color: rgba(235, 246, 255, 0.87);
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  width: 35%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.login .input-group input[type="submit"]:hover {
+  width: 100%;
+  background-color: #55bada;
+  color: #fff;
+}
+
+.login .input-group p a {
+  background-color: rgba(235, 246, 255, 0.87);
+  border: 5px solid rgba(235, 246, 255, 0.87);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  width: 35%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.login .input-group p a:hover {
+  background-color: #00ccff;
+  border: 10px solid #00ccff;
+  color: #fff;
+}
+/*# sourceMappingURL=login.css.map */

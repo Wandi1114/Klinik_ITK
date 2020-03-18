@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Dokter</title>
+	<link rel="stylesheet" href="../styles/calldokter.css">
+</head>
+<body>
+	<div class="container">
+		<form action="#">
+			<h1>Pemanggilan Dokter</h1>
+			<fieldset id="datapasien">
+				<legend>Data Pemanggil</legend>
+				<div class="control-group">
+					<label>Nama</label>
+					<input type="text" placeholder="Nama Pasien" required>
+				</div>
+				<div class="control-group">
+					<label>Tanggal</label>
+					<input type="date" required>
+				</div>
+				<div class="control-group">
+					<label>Jam</label>
+					<input type="time" required>
+				</div>
+			</fieldset>
+			<fieldset id="tujuan"> 
+				<legend>Alamat Tujuan Dokter</legend>
+				<div class="control-group">
+					<label>Kota</label>
+					<input type="text" placeholder="Kota" required>
+				</div>
+				<div class="control-group">
+					<label>Kecamatan</label>
+					<input type="text" placeholder="Kecamatan" required>
+				</div>
+				<div class="control-group">
+					<label>Kelurahan</label>
+					<input type="text" placeholder="Kelurahan" required>
+				</div>
+				<div class="control-group">
+					<label>RT/RW</label>
+					<input type="text" placeholder="RT/RW" required>
+				</div>
+				<div class="control-group">
+					<label>No Rumah</label>
+					<input type="text" placeholder="No Rumah" required>
+				</div>
+			</fieldset>
+			<fieldset id="datadokter">
+				<legend>Dokter Dipanggil</legend>
+				<div class="control-group">
+				<label>Spesialis</label>
+						<select required>
+							<option name="spesial" value="Mata">Mata</option>
+							<option name="spesial" value="THT">THT</option>
+							<option name="spesial" value="KIA">KIA</option>
+							<option name="spesial" value="Gigi">Gigi</option>
+						</select>
+				</div>
+				<div class="control-group">
+				<label>Nama Dokter</label>
+						<select required>
+							<option name="namaDokter" value="Wandi">Wandi</option>
+							<option name="namaDokter" value="Ridwan">Ridwan</option>
+							<option name="namaDokter" value="Tasya">Tasya</option>
+							<option name="namaDokter" value="Ikhsan">Ikhsan</option>
+						</select>
+				</div>
+			</fieldset>
+			<fieldset id="formbutton">
+				<legend>Selesai mengisi  form ?</legend>
+				<input type="reset" value="Reset">
+				<input type="submit" name="PesanDokter" value="Panggil">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
