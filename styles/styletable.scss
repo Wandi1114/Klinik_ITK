@@ -1,0 +1,28 @@
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+.content-table thead tr {
+    background-color: #2693ce;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table tb {
+    padding: 12px 24px;    
+
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid rgb(196, 195, 195);
+}
+
+.content-table tbody tr:nth-last-of-type(even) {
+    border-bottom: 2px solid #8ccdf0;
+}

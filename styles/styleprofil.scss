@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: ;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+.box {
+    width: 80%;
+    height: 400px;
+    display: inline-block;
+    margin: 50px 10%;
+    box-shadow: 0 27px 87px rgba(0,0,0,0.37); 
+    border-radius: 15px;  
+    overflow: hidden;
+}
+
+.box-img {
+    float: left;
+    width: 46%;
+}
+
+.box-text {
+    width: 45%;
+    float: left;
+    padding-left: 70px 70px 70px 35px;
+}
+
+.box-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #2693ce ;
+    margin-bottom: 45px;
+    
+}
+
+.box-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #2e2e2e;
+    line-height: 4S0px;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+
+}
+.box-text .social{
+    margin-top: 40px;
+}
+
+.box-text .social a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to left, #2693ce, #086191);
+    border-radius : 50%;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+    margin:0 15px 0 0 ;
+    transition: all ease 0.5s;
+}
+.box-text .social a:hover{
+    background: #fff;
+    color: #333;
+}
