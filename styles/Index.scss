@@ -1,28 +1,167 @@
-* {margin:0; padding:0;}
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
- 
-body {
-	background: #fff;
-	margin:0;
-	font-family: 'Open Sans', sans-serif;
-}
- 
-hr {
-	border:0;
-	background:#dedede;
-	height:1px;
-}		
- 
-header{
-	text-align: center;
-	color: #232323;
-}
- 
-header .judul{
-	font-size: 17pt;
-}
- 
-header .deskripsi{
-	font-size: 11pt;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 
+body{
+    background: rgb(203,253,249);
+    background: linear-gradient(0 deg, rgba(203,253,249,1) 26%,rgba(230,248,255,1) 83%); 
+}
+#logo img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+fieldset.info{
+  display: flex;
+  background-color: lavender;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  justify-content:center;
+}
+
+fieldset.info img{
+    padding-top: 10px;
+    width: 80px;
+    height: 80px;
+    box-shadow:7px 7px 10px 2px rgb(68, 49, 235); 
+}
+
+fieldset.info> div.b {
+    display:grid;
+    margin:0;
+    padding-top: 10px;
+    padding-left:20px;
+    width: 200px;
+    height:50px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+fieldset.info>div.b>h3:hover{
+    color: rgb(49, 116, 184);
+}
+
+fieldset.info> .b>h3>a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+fieldset.info> .b>p{
+    color: rgb(0, 0, 0);
+    float: left;
+    font-family: Courier, monospace;
+    font-size: inherit;
+}
+
+.info> h3{
+    color: rgb(8, 2, 70);
+    float: center;
+    padding-top: 15px;
+    font: size 20pt;
+}
+
+.OSer h1{
+    color: rgb(32, 10, 112);
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: bold;   
+    text-align: center;
+}
+
+.ao{
+      display: -ms-flexbox;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+        display: flex;
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        float: center;
+        padding-top: 20px;
+}
+
+.bo{
+    width: 30% ;
+    height: 450px;
+    border: 2px dotted rgb(88, 88, 199);
+    border-style: groove;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.bo> .Jud_Oser{
+    color: rgb(24, 18, 94);
+    float: center;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bo img{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow:7px 7px 10px 2px rgb(78, 230, 129);  
+}
+
+.bo>p{
+    margin-left:20px;
+    margin-right: 15px;
+    font-size: large;
+    text-align: justify;
+}
+
+.pb{
+    color: rgb(32, 10, 112);
+    float: left;
+    padding-top: 10px;
+    margin-left: 50px ;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.pa{
+    display: flex;
+    margin: 40px auto;
+    height: auto;
+    justify-content: space-evenly;
+    float: center;
+    width: 100%;
+    background: rgb(34,195,182);
+    background: linear-gradient(0deg, rgba(34,195,182,0.9771754636233951) 
+            0%, rgba(41,230,172,1) 52%, rgba(192,255,229,0.9743589743589743) 100%);
+}
+
+.pa>img{
+    padding-top: 20px;
+    width: 10%;
+    height:auto;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.pa>img:hover {
+    transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    box-shadow: 2px 2px 6px rgba(66, 133, 196, 0.5);
+}
+
+@media (max-width: 576px){
+    .bo{
+        width: 100%;
+    }
+}
