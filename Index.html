@@ -1,62 +1,159 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>INDEX</title>
-    <link rel="stylesheet"  href="styles/Index.css">
-    <link rel="stylesheet"  href="styles/Nav.css">
-    <link rel="stylesheet"  href="styles/footer.css">
-</head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/headerfooter.css">
+	<title>Beranda</title>
+	</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="content">
+            </div>
+        </div>
+    </header>
+	
+<nav>
+    <ul>
+        <li><a href="Index.html">HOME</a></li>        
+        <li><a>Our Service</a>
+            <ul>
+                <li><a href="pages/Call_Doctor.html">Call Doctor</a></li>
+                <li><a href="pages/Booking.html">Make An Apointment</a></li>
+            </ul>
+        </li>
 
-        <header>
-            <h1 class="judul">KLINIK ITK</h1>
-            <p class="deskripsi">Klinik yang Berguna Untuk Setiap Elemen yang Ada dalam Kampus ITK  </p>
-        </header>
+        <li><a>Doctor</a>
+            <ul>
+                <li><a href="pages/dokter_umum.html">Dokter Umum</a></li>
+                <li><a href="pages/dokter_gigi_umum.html">Dokter Gigi</a></li>
+                <li><a href="pages/Doctor_Schedule.html">Doctor Schedule</a></li>
+            </ul>
+        </li>
 
-    <nav>
-        <ul>
-            <li><a href="Index.html">Beranda</a></li>
-            <li><a>Lihat</a>
-                <ul>
-                    <li><a href="#">Profile Dokter</a></li>
-                    <li><a href="pages/Doctor_Schedule.html">Jadwal Dokter </a></li>
-                    <li><a href="pages/Map.html">Denah Klinik</a></li>
-                </ul>
-            </li>
-            <li><a>Layanan Kami</a>
-                <ul>
-                    <li><a href="pages/Call_Doctor.html">Panggil Dokter</a></li>
-                    <li><a href="pages/Booking.html">Booking Poli</a></li>
-                </ul>
-            </li>
-            <li id="Logout"><a href="Login.html" onClick="return confirm ('Yakin?')">Keluar</a></li>
-        </ul>
-    </nav>
-    <div align="center">
-        <img src="icons/Clinic Logo.ico" width="500">
-        <TABLE>
-            <tr>
-                <th colspan="5" bgcolor="rgb(0,0,255)" ><h1> <font color="White">WELCOME TO CLINIC ITK</font></h1></th>
-            </tr>
+        <li><a href="#">Contact</a></li>
+        
+        <li id="Logout"><a href="Login.html" onClick="return confirm ('Yakin?')">Keluar</a></li>
+    </ul>
+</nav>
 
-        <tr>
-            <th>Booking</th>
-            <th>Doctor Schedule</th>
-            <th>Call Doctor</th>
-            <th>Map</th>
-        </tr>
-        <tr>
-            <td align="center" ><a href="pages/Booking.html"><img src="icons/Booking.ico" width="50"></a></td>
-            <td align="center"><a href="pages/Doctor_Schedule.html"><img src="icons/Doctor Schedule.ico" width="50"></a></td>
-            <td align="center"><a href="pages/Call_Doctor.html"><img src="icons/Call Doctor.ico" width="50"></a></td>
-            <td align="center"><a href="pages/Map.html"><img src="icons/Floor Plan.ico" width="50"></a></td>
-    
-        </body>
-<footer>
-    <div class="footer">
-        Copyright © 
-        By Kelompok 4
+<div class="OSer">
+    <h1> Our Services</h1>
+</div>
+<div class="ao">
+    <div class="bo">
+        <img src="images/f.jpg">
+        <div class="Jud_Oser">Make an Appointment</div>
+        <p>Untuk membuat janji dengan dokter yang dituju</p> 
     </div>
-</footer>
-</html>
+    <div class="bo">
+        <img src="images/g.jpg">
+        <div class="Jud_Oser">General Practitioners</div>
+        <p>Dokter yang fokus dalam mengobati penyakit yang muncul secara tiba-tiba (akut) dan menahun (kronis), juga dikenal sebagai dokter layanan pertama.</p> 
+    </div>
+    <div class="bo">
+        <img src="images/h.jpg">
+        <div class="Jud_Oser">Dentist</div> 
+        <p>perawatan gigi yang menangani pasien dengan masalah pertumbuhan, perkembangan, variasi wajah, rahang dan gigi dan abnormalitas dari hubungan gigi dan wajah serta perawatan perbaikannya.</p>
+    </div>
+</div>
+<div class="pb">Our Partners </div>
+<div class="pa">
+    <img src="images/BI.png">
+    <img src="images/BNI.png">
+    <img src="images/KK.png"> 
+    <img src="images/BP.png">
+    <img src="images/P.png">
+</div>
+<div id="logo">
+    <center>
+        <img src="images/Capture.png">
+        <h1 class="judul">KLINIK ITK</h1>
+    </center>
+</div>
+<fieldset class="info">
+        <img src="images/Call.ico">
+        <div class="b">
+            <p class="judul">Give Us a Call</p>
+            <h3>1-888-123-4567</h3>
+        </div>
 
+        <img src="images/email.ico">
+        <div class="b">
+            <p class="judul">Send Us a Email</p>
+            <h3><a href="#.html">clinic@itk.ac.id</a></h3>
+        </div>
+
+        <img src="images/Map.png">
+        <div class="b">
+            <p class="judul">Visit Our Location</p> 
+            <h3><a href="#.html">Jl.Soekarno Hatta Km.15</a></h3>
+        </div>  
+</fieldset>
+<footer class="ao">
+
+    <div class="CI">Contact Information
+        <div class="b">
+            <img src="images/Map1.png">
+            <h3>Jl.Soekarno Hatta Km.15</h3> 
+        </div>
+        <div class="b">
+            <img src="images/web.png">
+            <h3>klinik.itk.net</h3> 
+        </div>
+        <div class="b">
+            <img src="images/email.png">
+            <h3>clinic@itk.ac.id</h3> 
+        </div>
+        <div class="b">
+            <img src="images/call.png">
+            <h3>1-888-123-4567</h3> 
+        </div>
+    </div>
+
+    <div class="CI">Doctors
+        <ul>
+            <li><a href="dokter_umum_detail1.html">Arifina Ratnawati</a></li>
+            <li><a href="dokter_umum_detail2.html">dr. Ayu Prima Kusuma Putri</a></li>
+            <li><a href="dokter_gigi_umum_detail.html">Drg.Atika Nissa R</a></li>
+            <li><a href="dokter_gigi_umum_detail2.html">Drg.Irma Riani</a></li>
+        </ul>
+    </div>
+    
+    <div class="CI">Services
+        <ul>
+            <li><a href="#.html">Make an Appointment</a></li>
+            <li><a href="#.html">dr. Ayu Prima Kusuma Putri</a></li>
+            <li><a href="#.html">Drg.Atika Nissa R</a></li>
+            <li><a href="#.html">Drg.Irma Riani</a></li>
+        </ul>
+    </div>
+
+    <div class="CI">Contact Us
+        <form id="Komen">
+            <div>
+                <input type="text" name="nama" placeholder="Name">
+            </div>
+            <div>
+                <input type="text" name="Email" placeholder="Email">
+            </div>
+            <div>
+                <textarea name="message" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="SEND">
+            </div>
+        </form>
+    </div>
+    <div class="CR">
+        <p>Copyright © 
+         By Kelompok 4</p> 
+     </div>
+</footer>
+
+</body>
+</html>
