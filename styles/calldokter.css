@@ -1,0 +1,21 @@
+body {
+  padding: 0;
+  margin: auto;
+  background-image: url("../images/Calldokter.jpg");
+  background-size: cover;
+  font-weight: bold;
+}
+
+.label {
+  text-align: left;
+}
+
+.container {
+  margin-top: 50px;
+  width: 800px;
+}
+
+.selected {
+  width: 200px;
+}
+/*# sourceMappingURL=calldokter.css.map */

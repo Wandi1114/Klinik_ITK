@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,+BAA+B;EACjD,eAAe,EAAE,KAAK;EACtB,WAAW,EAAE,IAAI;CACpB;;AACD,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,IAAI;CACnB;;AACD,AAAA,UAAU,CAAA;EACN,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,KAAK;CACf;;AACD,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "calldokter.scss"
+    ],
+    "names": [],
+    "file": "calldokter.css"
+}
