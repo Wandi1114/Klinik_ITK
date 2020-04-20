@@ -1,78 +1,124 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Call Dokter</title>
-	<link rel="stylesheet" href="../styles/calldokter.css">
-</head>
-<body>
-	<div class="container">
-		<form action="#">
-			<h1>Pemanggilan Dokter</h1>
-			<fieldset id="datapasien">
-				<legend>Data Pemanggil</legend>
-				<div class="control-group">
-					<label>Nama</label>
-					<input type="text" placeholder="Nama Pasien" required>
-				</div>
-				<div class="control-group">
-					<label>Tanggal</label>
-					<input type="date" required>
-				</div>
-				<div class="control-group">
-					<label>Jam</label>
-					<input type="time" required>
-				</div>
-			</fieldset>
-			<fieldset id="tujuan"> 
-				<legend>Alamat Tujuan Dokter</legend>
-				<div class="control-group">
-					<label>Kota</label>
-					<input type="text" placeholder="Kota" required>
-				</div>
-				<div class="control-group">
-					<label>Kecamatan</label>
-					<input type="text" placeholder="Kecamatan" required>
-				</div>
-				<div class="control-group">
-					<label>Kelurahan</label>
-					<input type="text" placeholder="Kelurahan" required>
-				</div>
-				<div class="control-group">
-					<label>RT/RW</label>
-					<input type="text" placeholder="RT/RW" required>
-				</div>
-				<div class="control-group">
-					<label>No Rumah</label>
-					<input type="text" placeholder="No Rumah" required>
-				</div>
-			</fieldset>
-			<fieldset id="datadokter">
-				<legend>Dokter Dipanggil</legend>
-				<div class="control-group">
-				<label>Spesialis</label>
-						<select required>
-							<option name="spesial" value="Mata">Mata</option>
-							<option name="spesial" value="THT">THT</option>
-							<option name="spesial" value="KIA">KIA</option>
-							<option name="spesial" value="Gigi">Gigi</option>
-						</select>
-				</div>
-				<div class="control-group">
-				<label>Nama Dokter</label>
-						<select required>
-							<option name="namaDokter" value="Wandi">Wandi</option>
-							<option name="namaDokter" value="Ridwan">Ridwan</option>
-							<option name="namaDokter" value="Tasya">Tasya</option>
-							<option name="namaDokter" value="Ikhsan">Ikhsan</option>
-						</select>
-				</div>
-			</fieldset>
-			<fieldset id="formbutton">
-				<legend>Selesai mengisi  form ?</legend>
-				<input type="reset" value="Reset">
-				<input type="submit" name="PesanDokter" value="Panggil">
-			</fieldset>
-		</form>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/calldokter.css">
+        <link rel="stylesheet" href="../styles/css/bulma.css">
+        <script>
+            function done(){
+               
+                var d = "Data anda sudah dikirim, Silahkan tunggu konfirmasi";
+                document.getElementsById("note").innerHTML = "uhiujkuk";
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                    $notification = $delete.parentNode;
+                    $delete.addEventListener('click', () => {
+                     $notification.parentNode.removeChild($notification);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <section class="container">
+            <h1 class="title">PEMANGGILAN DOKTER</h1>
+            <div id="note"></div>
+            <div class="notification is-primary is-light">
+                <button class="delete"></button>
+            </div>
+            <form action="#">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label"> Nama </label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <input class="input" type="text" placeholder="Nama" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label"> No. Telpon </label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <input class="input" type="text" placeholder="Nomor Telpon" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Tanggal</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <input class="input" type="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label"> Jam </label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <input class="input" type="time" placeholder="Nama" required>
+                        </div>
+                    </div>
+                </div>   
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Alamat Lengkap</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <textarea class="textarea" type="text" placeholder="Alamat lengkap" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label class="label">Spesialis</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="select">
+                            <select class="selected" required>
+                                <option name="spesial" value="Mata">Mata</option>
+                                <option name="spesial" value="THT">THT</option>
+                                <option name="spesial" value="KIA">KIA</option>
+                                <option name="spesial" value="Gigi">Gigi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <label class="label">Nama Dokter</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="select">
+                            <select class="selected" required>
+                                <option name="namaDokter" value="Wandi">Wandi</option>
+                                <option name="namaDokter" value="Ridwan">Ridwan</option>
+                                <option name="namaDokter" value="Tasya">Tasya</option>
+                                <option name="namaDokter" value="Ikhsan">Ikhsan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <input class="button is-waring is-light" type="reset" value="Reset">
+                </div>
+                <div class="control">
+                    <input class="button is-info" type="submit" name="PesanDokter" value="Panggil" onclick=done();>
+                </div>
+            </div>
+        
+
+            </form>
+        </section>
+    </body>
 </html>
