@@ -4,63 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/headerfooter.css">
-	<title>Beranda</title>
-	</head>
-<body>
+    <link rel="stylesheet" href="Klinik_ITK-master/styles/bulma/bulma.css">
+    <link rel="stylesheet" type="text/css" href="Klinik_ITK-master/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Klinik_ITK-master/styles/headerfooter.css">
+	<title>Website Klinik ITK</title>
+</head>
+
+<section>
     <header>
-        <div class="slider">
-            <div class="content">
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar__logo navbar-brand">
+          <a class="navbar-item" href="Index.html">
+            <img src="icons/Clinic Logo.ico" />
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item">
+                Home
+              </a>
+            
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Our Services
+              </a>
+              
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="Call_Doctor.html">
+                  Call Doctor
+                </a>
+                <a class="navbar-item" href="Booking.html">
+                  Make An Appointment
+                </a>
+                </div>
+            </div>
+            
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Doctor
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    general practitioners
+                  </a>
+                  <a class="navbar-item">
+                    Dentist
+                  </a>
+                  <a class="navbar-item">
+                    Doctor Schedule
+                  </a>
+                </div>
             </div>
         </div>
-    </header>
-	
-<nav>
-    <ul>
-        <li><a href="Index.html">HOME</a></li>        
-        <li><a>Our Service</a>
-            <ul>
-                <li><a href="pages/Call_Doctor.html">Call Doctor</a></li>
-                <li><a href="pages/Booking.html">Make An Apointment</a></li>
-            </ul>
-        </li>
-
-        <li><a>Doctor</a>
-            <ul>
-                <li><a href="pages/dokter_umum.html">Dokter Umum</a></li>
-                <li><a href="pages/dokter_gigi_umum.html">Dokter Gigi</a></li>
-                <li><a href="pages/Doctor_Schedule.html">Doctor Schedule</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Contact</a></li>
         
-        <li id="Logout"><a href="Login.html" onClick="return confirm ('Yakin?')">Keluar</a></li>
-    </ul>
-</nav>
+        <div class="navbar-end">
+            <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Log Out</strong>
+                </a>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <main>
+      <section class="hero is-fullheight has-carousel">
+        <div id="carousel-demo" class="hero-carousel">
+          <div class="item-1">
+            <img src="../images/a.jpg" alt="" />
+          </div>
+          <div class="item-2">
+            <img src="../images/b.jpg" alt="" />
+          </div>
+          <div class="item-3">
+            <img src="../images/c.jpg" alt="" />
+          </div>
+          <div class="item-1">
+            <img src="../images/d.jpg" alt="" />
+          </div>
+          <div class="item-2" data-slides-to-scroll="1">
+            <img src="../images/e.jpg" alt="" />
+          </div>
+        </div>
+        <div class="hero-head"></div>
+        <div class="hero-body"></div>
+        <div class="hero-foot"></div>
+    </section>
 
-<div class="OSer">
-    <h1> Our Services</h1>
-</div>
-<div class="ao">
-    <div class="bo">
-        <img src="images/f.jpg">
-        <div class="Jud_Oser">Make an Appointment</div>
-        <p>Untuk membuat janji dengan dokter yang dituju</p> 
+    <section>
+        <h1> Our Services</h1>
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="images/f.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                      <p class="title is-4">Make an Appointment</p>
+                      <p class="subtitle is-6">Untuk membuat janji dengan dokter yang dituju</p>
+                    </div>
+                  </div>
+                    <time datetime="All Day">24 Hours</time>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="images/g.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                      <p class="title is-4">General Practitioners</p>
+                      <p class="subtitle is-6">Dokter yang fokus dalam mengobati penyakit yang muncul secara tiba-tiba (akut) dan menahun (kronis), juga dikenal sebagai dokter layanan pertama</p>
+                    </div>
+                  </div>
+                    <time datetime="Work Day">10.00 AM - 10.00 PM</time>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="images/h.jpg" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                      <p class="title is-4">Dentist</p>
+                      <p class="subtitle is-6"> Dokter yang fokus pada perawatan gigi yang menangani pasien dengan masalah pertumbuhan, perkembangan, variasi wajah, rahang dan gigi dan abnormalitas dari hubungan gigi dan wajah serta perawatan perbaikannya</p>
+                    </div>
+                  </div>
+                    <time datetime="Sunday,Wednesday, and Saturday">10.00 AM - 10.00 PM</time>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
-    <div class="bo">
-        <img src="images/g.jpg">
-        <div class="Jud_Oser">General Practitioners</div>
-        <p>Dokter yang fokus dalam mengobati penyakit yang muncul secara tiba-tiba (akut) dan menahun (kronis), juga dikenal sebagai dokter layanan pertama.</p> 
-    </div>
-    <div class="bo">
-        <img src="images/h.jpg">
-        <div class="Jud_Oser">Dentist</div> 
-        <p>perawatan gigi yang menangani pasien dengan masalah pertumbuhan, perkembangan, variasi wajah, rahang dan gigi dan abnormalitas dari hubungan gigi dan wajah serta perawatan perbaikannya.</p>
-    </div>
-</div>
+    </section>
+    
 <div class="pb">Our Partners </div>
 <div class="pa">
     <img src="images/BI.png">
@@ -69,12 +168,14 @@
     <img src="images/BP.png">
     <img src="images/P.png">
 </div>
+
 <div id="logo">
     <center>
         <img src="images/Capture.png">
         <h1 class="judul">KLINIK ITK</h1>
     </center>
 </div>
+
 <fieldset class="info">
         <img src="images/Call.ico">
         <div class="b">
