@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet"  href="styles/Registerstyle.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="Klinik_ITK-master/styles/Registerstyle.css">
+    <title>__Register__</title>
 </head>
 <body>
+    <section class="container">
     <form action="Index.html" method="post">
-    <h1>Form Pendaftaran</h1>
-
-    <fieldset id="UserDataFields">
+        <h1 class="title">Form Pendaftaran</h1>
         <legend>Data pengguna (wajib diisikan seluruhnya)</legend>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Nama Lengkap</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                    <input type="text" class="input is-info" placeholder="Nama Lengkap">
+                </div>
+            </div>
 
-        <div class="control-group">
-            <label for="Register[Username]">Nama Lengkap</label>
-            <input type="text"
-                   name="Register[Username]"
-                   id="RegisterUsername" required>
-        </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">NIK</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                    <input type="text" class="input is-info" placeholder="NIK">
+                </div>
+            </div>
 
-        <div class="control-group">
-            <label for="Register[NIK]">NIK</label>
-            <input type="text"
-                   name="Register[NIK]"
-                   id="RegisterNIK" required>
-        </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Password</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                    <input type="password" class="input is-info" placeholder="Password">
+                </div>
+            </div>
 
-        <div class="control-group">
-            <label for="Register[Password]">Password</label>
-            <input type="password"
-                   name="Register[Password]"
-                   id="RegisterPassword" required>
-        </div>
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Email</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                    <input type="email" class="input is-info" placeholder="Email" required>
+                </div>
+            </div>
 
-        <div class="control-group">
-            <label for="Register[Email]">Email</label>
-            <input type="email"
-                   name="Register[Email]"
-                   id="RegisterEmail" required>
-        </div>
+            <div class="field is-horizontal">
+                <label for="Register[JenKel]">Jenis Kelamin</label>
+                    <select required>
+                        <option name="JenKel" value="Pria">Pria</option>
+                        <option name="JenKel" value="Wanita">Wanita</option>
+                    </select>
+            </div>
 
-        <div class="control-group">
-            <label for="Register[JenKel]">Jenis Kelamin</label>
-            <select id="RegisterJenKel" name="Register[JenKel]">
-                <option value="pria">Pria</option>
-                <option value="wanita">Wanita</option>
-            </select>
-        </div>
-    </fieldset>
-
-    <fieldset id="FormAction">
-        <legend>Selesai mengisikan form?</legend>
-        <div class="input-group">   
             <input type="reset" value="Hapus Form">
             <input type="submit" value="Daftar">
-        </div>
-    </fieldset>
-</form>
+
+    </form>
+    </section>
 </body>
 </html>
