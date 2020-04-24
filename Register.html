@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/bulma/bulma.css">
+    <link rel="stylesheet" href="styles/css/bulma.css">
     <link rel="stylesheet" href="styles/Registerstyle.css">
     <title>__Register__</title>
     <script>
@@ -25,20 +25,22 @@
 </head>
 <body>
     <section class="container">
-    <form action="Index.html">
         <h1 class="title">Form Pendaftaran</h1>
         <div id="note"></div>
         <legend>Data pengguna (wajib diisikan seluruhnya)</legend>
         <div class="notification is-primary is-light">
             <button class="delete"></button>
         </div>    
+        
+        <form action="Login.html">
             <div class="field is-horizontal">
                 <div class="field-label is-normal">
                     <label class="label">Nama Lengkap</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
-                    <input type="text" class="input is-info" placeholder="Nama Lengkap">
+                    <input class="input" type="text" placeholder="Nama Lengkap" required>
+                    </div>
                 </div>
             </div>
 
@@ -48,7 +50,8 @@
                 </div>
                 <div class="field-body">
                     <div class="field">
-                    <input type="text" class="input is-info" placeholder="NIK">
+                    <input type="text" class="input" placeholder="NIK" required>
+                    </div>
                 </div>
             </div>
 
@@ -58,7 +61,8 @@
                 </div>
                 <div class="field-body">
                     <div class="field">
-                    <input type="password" class="input is-info" placeholder="Password">
+                    <input type="password" class="input" placeholder="Password" required>
+                    </div>
                 </div>
             </div>
 
@@ -68,16 +72,23 @@
                 </div>
                 <div class="field-body">
                     <div class="field">
-                    <input type="email" class="input is-info" placeholder="Email" required>
+                    <input type="email" class="input" placeholder="Email" required>
+                </div>
                 </div>
             </div>
-
+            
             <div class="field is-horizontal">
-                <label for="Register[JenKel]">Jenis Kelamin</label>
-                    <select required>
+                <div class="field-label">
+                <label class="label">Jenis Kelamin</label>
+                </div>    
+                <div class="field-body">
+                    <div class="select">
+                    <select class="selected" required>
                         <option name="JenKel" value="Pria">Pria</option>
                         <option name="JenKel" value="Wanita">Wanita</option>
                     </select>
+                    </div>
+                </div>
             </div>
             
             <div class="field is-grouped">
@@ -88,7 +99,7 @@
                     <input class="button is-info" type="submit" name="PesanDokter" value="Panggil" onclick=done();>
                 </div>
             </div>
-    </form>
+        </form>
     </section>
 </body>
 </html>
