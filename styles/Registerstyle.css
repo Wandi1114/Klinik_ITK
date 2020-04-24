@@ -12,24 +12,7 @@ body, html {
 
 label {
   color: #fff !important;
-}
-
-form {
-  margin: 0 auto;
-  width: 960px;
-}
-
-form > h1 {
-  border-bottom: 1px solid #E5E5E5;
-  font-size: 1.5em;
-  line-height: 2.5em;
-  margin-bottom: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-fieldset {
-  border: none;
+  text-align: left;
 }
 
 fieldset > legend {
@@ -37,107 +20,11 @@ fieldset > legend {
   line-height: 2.5em;
 }
 
-input {
-  display: inline-block;
-  vertical-align: center;
+.container {
+  margin-top: 50px;
+  width: 800px;
 }
 
-input:focus {
-  background: #94bbe9;
+.selected {
+  width: 200px;
 }
-
-input:required:invalid,
-input:focus:invalid,
-input:required:valid {
-  background-position: 97.5% center;
-  background-repeat: no-repeat;
-}
-
-input:required:invalid,
-input:focus:invalid {
-  background-image: white;
-}
-
-input:required:valid {
-  background-image: white;
-}
-
-input[type=submit],
-input[type=reset] {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E6E6E6));
-  background: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
-  border: 1px solid #999;
-  margin: 4px 10px;
-  padding: 5px;
-  width: 100px;
-}
-
-input[type=submit]:hover {
-  cursor: pointer;
-  background-color: #00ccff;
-  border: 10px solid #00ccff;
-  color: white;
-}
-
-input[type=reset]:hover {
-  cursor: pointer;
-  background-color: #00ccff;
-  border: 10px solid #00ccff;
-  color: #c76060;
-}
-
-input[type=submit]:active,
-input[type=reset]:active {
-  background: #D44D4D;
-}
-
-input[type=submit] {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0088CC), to(#0044CC));
-  background: linear-gradient(to bottom, #0088CC, #0044CC);
-  border: 1px solid #0088CC;
-  color: #FFF;
-}
-
-input[type=submit]:active {
-  background: #0044CC;
-}
-
-select,
-input[type*=date],
-input[type=text],
-input[type=tel],
-input[type=email],
-input[type=url],
-input[type=password] {
-  border: 1px solid #CCC;
-  border-radius: 5px;
-  padding: 5px;
-  width: 225px;
-}
-
-select:focus,
-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  outline: 0;
-}
-
-.control-group {
-  margin: 10px 0;
-}
-
-.control-group > label {
-  display: inline-block;
-  text-align: right;
-  width: 20%;
-}
-
-#FormAction {
-  border-top: 1px solid #C5C5C5;
-  margin-bottom: 1em;
-  text-align: center;
-  width: 100%;
-}
-/*# sourceMappingURL=Registerstyle.css.map */
