@@ -5,11 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>doctor_schedule</title>
    <link rel="stylesheet" href="../styles/css/bulma.css">
+   <link rel="stylesheet" type="text/css" href="../styles/headerfooter.css">
 </head>
 <body>
+  <nav class="navbar is-fixed-top has-background-grey-lighter" role="navigation" aria-label="main navigation">
+    <div class="navbar__logo navbar-brand">
+        <a class="navbar-item" href="../index.html">
+        <img src="../icons/Clinic Logo.ico" />
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Our Services</a>
+            
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="Call_Doctor.html">
+                            Call Doctor                
+                        </a>
+                        <a class="navbar-item has-background-info has-text-black-bis" href="Booking.html">
+                            Make An Appointment
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Doctor
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="dokter_umum.html">General Practitioners</a>
+                        <a class="navbar-item" href="dokter_gigi_umum.html">Dentist</a>
+                        <a class="navbar-item has-background-info has-text-black-bis" href="jadwal_dokter.html">
+                Doctor Schedule
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="buttons">
+            <a class="button is-primary" href="../Login.html">
+                <strong>Log Out</strong>
+            </a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
   <section class="hero">
     <div class="hero-body">
-      <div class="container">
+      <div class="container" style="margin-top: 7%; margin: 2%;">
         <h1 class="title">
           Doctor Schedule
         </h1>
@@ -140,6 +193,16 @@
         </div>
         <br>
       </section>
+      <footer class="footer is-fullhd is $grey-light	">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Clinic ITK</strong> by <a href="#">Kelompok 4</a>. The source code is powered by 
+            <a href="https://bulma.io">BULMA</a>. <br> <strong>Call :</strong> 1-888-123-4567 / <strong>E-mail :</strong> clinic@itk.ac.id 
+            <br> <strong>Visit Our Location</strong> Jl.Soekarno Hatta Km.15 
+            <br> <strong>@Copyright</strong> By Kelompok 4 - Web Design
+          </p>
+        </div>
+      </footer>
 
 </body>
 </html>
