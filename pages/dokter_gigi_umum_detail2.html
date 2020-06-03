@@ -4,8 +4,64 @@
 	<title>profile</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="../styles/styleprofil.css">
+	<link rel="stylesheet" href="../styles/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="../styles/headerfooter.css">
 </head>
 <body>
+	<nav class="navbar is-fixed-top has-background-grey-lighter" role="navigation" aria-label="main navigation">
+        <div class="navbar__logo navbar-brand">
+            <a class="navbar-item" href="../index.html">
+            <img src="../icons/Clinic Logo.ico" />
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Our Services</a>
+                
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="Call_Doctor.html">
+                                Call Doctor                
+                            </a>
+                            <a class="navbar-item" href="Booking.html">
+                                Make An Appointment
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Doctor
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item " href="dokter_umum.html">General Practitioners</a>
+                            <a class="navbar-item has-background-info has-text-black-bis" href="dokter_gigi_umum.html">Dentist</a>
+                    <a class="navbar-item" href="jadwal_dokter.html">
+                    Doctor Schedule
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbar-end">
+            <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary" href="../Login.html">
+                    <strong>Log Out</strong>
+                </a>
+            </div>
+            </div>
+        </div>
+		</nav>
+	
+<section class="hero is-primary">
+	<div class="hero-body">
 	<div class="wrapped">
 		<div class="box">
 			<div class="box-img">
@@ -53,6 +109,17 @@
 
 		</div>
 	</div>
-
+</div>
+</section>
+<footer class="footer is is-fixed-bottom">
+	<div class="content has-text-centered">
+	  <p>
+		<strong>Clinic ITK</strong> by <a href="#">Kelompok 4</a>. The source code is powered by 
+		<a href="https://bulma.io">BULMA</a>. <br> <strong>Call :</strong> 1-888-123-4567 / <strong>E-mail :</strong> clinic@itk.ac.id 
+		<br> <strong>Visit Our Location</strong> Jl.Soekarno Hatta Km.15 
+		<br> <strong>@Copyright</strong> By Kelompok 4 - Web Design
+	  </p>
+	</div>
+  </footer>
 </body>
 </html>
