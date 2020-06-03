@@ -5,21 +5,77 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>dokter_umum</title>
 	<link rel="stylesheet" href="../styles/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="../styles/headerfooter.css">
 </head>
 <body>
-	<section class="section">
-		<div class="container">
-			<h1 class="title">
+
+        <nav class="navbar is-fixed-top has-background-grey-lighter" role="navigation" aria-label="main navigation">
+        <div class="navbar__logo navbar-brand">
+            <a class="navbar-item" href="../index.html">
+            <img src="../icons/Clinic Logo.ico" />
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Our Services</a>
+                
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="Call_Doctor.html">
+                                Call Doctor                
+                            </a>
+                            <a class="navbar-item" href="Booking.html">
+                                Make An Appointment
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Doctor
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item has-background-info has-text-black-bis" href="dokter_umum.html">General Practitioners</a>
+                            <a class="navbar-item" href="dokter_gigi_umum.html">Dentist</a>
+                    <a class="navbar-item" href="jadwal_dokter.html">
+                    Doctor Schedule
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbar-end">
+            <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary" href="../Login.html">
+                    <strong>Log Out</strong>
+                </a>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+
+	<section class="hero is-primary">
+		<div class="hero-body">
+		<div class="container " style="margin: 2%;">
+			<h1 class="title" style="margin: 2%;">
 				Daftar Dokter Umum 
 			</h1>
-			  <h2 class="subtitle">
+			  <h2 class="subtitle" style="margin: 2%;">
 				Expert physician specialists and caring clinical staff provide you with an exceptional patient care is what sets Syring Medical Center apaert health care experience.
 			  </h2>
 			<br>
 
 			<div class="columns is-multiline">
-				<div class="column is-6">
-					<div class="columns " style="border : 1px solid grey; margin: 10px;">
+				<div class="column is-6 ">
+					<div class="columns has-background-grey" style="border : 1px solid grey; margin: 1%;">
 						<div class="column is-4">
 							<img src="../images/du1.jpg">							
 						</div>
@@ -32,13 +88,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-6">
-					<div class="columns" style="border : 1px solid grey; margin: 10px;">
+				<div class="column is-6 ">
+					<div class="columns has-background-grey" style="border : 1px solid grey; margin: 1%;">
 						<div class="column is-4">
 							<img src="../images/du2.jpeg">							
 						</div>
 						<div class="column">
-							<h3 class="title is-size-3">Dr. Arifina Ratnawati</h3>
+							<h3 class="title is-size-3">dr. Ayu Prima Kusuma Putri</h3>
 							<p> Hospital doctors examine patients so that they can diagnose and treat health conditions and diseases</p>
 							<br>
 							<a class="button is-info" href="dokter_umum_detail2.html">detail</a>
@@ -48,6 +104,17 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</section>
+	<footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Clinic ITK</strong> by <a href="#">Kelompok 4</a>. The source code is powered by 
+            <a href="https://bulma.io">BULMA</a>. <br> <strong>Call :</strong> 1-888-123-4567 / <strong>E-mail :</strong> clinic@itk.ac.id 
+            <br> <strong>Visit Our Location</strong> Jl.Soekarno Hatta Km.15 
+            <br> <strong>@Copyright</strong> By Kelompok 4 - Web Design
+          </p>
+        </div>
+      </footer>
 </body>
 </html>
