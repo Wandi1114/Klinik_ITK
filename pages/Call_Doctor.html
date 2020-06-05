@@ -4,24 +4,9 @@
         <link rel="stylesheet" href="../styles/calldokter.css">
         <link rel="stylesheet" href="../styles/css/bulma.css">
         <link rel="stylesheet" type="text/css" href="../styles/headerfooter.css">
-        <script>
-            function done(){
-               
-                var d = "Data anda sudah dikirim, Silahkan tunggu konfirmasi";
-                document.getElementsById("note").innerHTML = "uhiujkuk";
-            }
-
-            document.addEventListener('DOMContentLoaded', () => {
-                (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
-                    $notification = $delete.parentNode;
-                    $delete.addEventListener('click', () => {
-                     $notification.parentNode.removeChild($notification);
-                    });
-                });
-            });
-        </script>
     </head>
-
+    <section class="section ">
+    <div class="container is-fullhd">
         <nav class="navbar is-fixed-top has-background-grey-lighter" role="navigation" aria-label="main navigation">
         <div class="navbar__logo navbar-brand">
             <a class="navbar-item" href="../index.html">
@@ -36,6 +21,9 @@
 
         <div class="navbar-menu">
                 <div class="navbar-start">
+                    <a class="navbar-item" href="../index.html">
+                        Home
+                    </a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Our Services</a>
                 
@@ -73,13 +61,11 @@
             </div>
         </div>
         </nav>
-            
-        <section class="container is-center" style="margin: 2%;">
+    </div>
+
+</section>
+        <section class="container is-center" id="dw" style="margin: 2%;">
             <h1 class="title">PEMANGGILAN DOKTER</h1>
-            <div id="note"></div>
-            <div class="notification is-primary is-light">
-                <button class="delete"></button>
-            </div>
             <form action="#">
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
