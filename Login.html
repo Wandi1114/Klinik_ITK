@@ -1,107 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Component Vuejs</title>
+    <title>SELAMAT DATANG</title>
     <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/css/bulma.css">
-</head>
 </head>
 <body>
-    <div class="container" id="dw"  >
-        <div class="row" style="padding-top: 20px;">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        Biodata
-                    </div>
-                    <div class="card-body" >
-                        <div v-if="show == 'biodata'">
-                            <biodata />
-                        </div>
-                        <div v-else>
-                            <showprofile />
-                        </div>
-                        <script type="text/x-template" id="biodataform">
-                            <div>
-                               <div class="form-group">
-                                   <label for="">NIK</label>
-                                   <input type="text" 
-                                       class="form-control" 
-                                       v-model="data.NIK"
-                                    >
-                               </div>
-                               <div class="form-group">
-                                   <label for="">Password</label>
-                                   <input type="Password" 
-                                       class="form-control" 
-                                       v-model="data.Password"
-                                    >
-                               </div>
-                            </div>
-                        </script>
-                        <script type="text/x-template" id="showform">
-                            <div>
-                                <table class="table table-hover">
-                                    <tr>
-                                        <th>NIK</th>
-                                        <td>:</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Password</th>
-                                        <td>:</td>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </script>
-                    </div>
-                    <div class="card-footer">
-                        <button class="button is-primary is-rounded" > login</button>
-                        <p>Belum Punya Akun ? <a href="Register.html">DAFTAR</a></p>
-                    </div>
-                </div>
+    <form action="Index.html">
+        <div class="login">
+            <h2>KLINIK ITK</h2>
+            <div class="input-group">
+                <input type="text" name="NIK" required="">
+                <span>NIK</span>
+            </div>
+            <div class="input-group">
+                <input type="password" name="pass" required="">
+                <span>PASSWORD</span>
+            </div>
+            <div class="input-group">
+                <input type="submit" name="Login" value="LOGIN">
+                <p>Belum Punya Akun ? <a href="Register.html">DAFTAR</a></p>
             </div>
         </div>
-    </div>
-​
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script>
-    
-    Vue.component('biodata', {
-        template: '#biodataform',
-        data() {
-          return {
-             data: {
-                 NIK: '',
-                 Password: ''
-             }
-          }
-        },
-        mounted() {
-            this.data = {
-                NIK: '',
-                email: ''
-            }
-        }
-    })
-
-    Vue.component('showprofile', {
-        template: '#showform'
-    })
-
-    new Vue({
-        el: '#dw',
-        data: {
-            show: 'biodata',
-            data: {}
-        },
-      })
-    </script>
+        
+    </form>
 </body>
 </html>
