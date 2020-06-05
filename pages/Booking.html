@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>  <head>
+<html>  
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
@@ -29,6 +30,9 @@
 
         <div class="navbar-menu">
                 <div class="navbar-start">
+                    <a class="navbar-item" href="../index.html">
+                        Home
+                    </a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Our Services</a>
                 
@@ -71,82 +75,291 @@
 
   <section class="hero is-fullheight is-primary " >
     <div class="hero-body">
-        <div class="container" style="margin-top: 7% ;">
+        <div class="container" style="margin-top: 7% ;" id="dw">
             <div class="columns is-centered">
-            <div class="columnis-5-tablet is-5-desktop is-5-widescreen">
-                <form class="box">
-                    <div class="card-content login">
-                        <label class="label " style="font-size: 25px">
+            <div class="columns is-5-tablet is-5-desktop is-5-widescreen">
+                <form class="box has-background-grey-light">
+                    <div class="card-content ">
+                        <label class="label is-primary " style="font-size: 25px">
 									Form Booking
 								</label>
                         <sub class="sub" style="font-size: 15px">
                         Silahkan Isi Booking Jika Ingin Melakukan Konsultasi.
                         </sub>
-                            <div class="field">
-                            <label class="label">Nama</label>
-                            <div class="control">
-                        <input class="input" type="text" placeholder="Nama">
-                    </div>
-                    </div>
-                        <div class="field">
-                        <label class="label">NIK</label>
-                        <div class="control">
-                        <input class="input" type="text" placeholder="NIK">
-                    </div>
-                    </div>
-                        <div class="field">
-                        <label class="label">Nomor HP</label>
-                        <div class="control">
-                        <input class="input" type="text" placeholder="+62***">
-                    </div>
-                    </div>
-                        <div class="field">
-                        <label class="label">Tanggal Konsultasi</label>
-                        <div class="control">
-                        <input class="input" type="text" placeholder="DD/MM/YYYY">
-                    </div>
-                    </div>
-                        <div class="field">
-                        <label class="label">Kota Asal</label>
-                        <div class="select">
-                        <select>
-                        <option>Balikpapan</option>
-                        <option>Luar Balikpapan</option>
-                        </select placeholder="Balikpapan">
-                    </div>
-                    </div>
-                        <div class="field">
-                        <label class="label">Pilih Poli</label>
-                        <div class="select">
-                        <select>
-                        <option>Poli Umum</option>
-                        <option>Poli Gigi</option>
-                        <option>Poli Kandungan</option>
-                        <option>Poli Anak</option>
-                        </select placeholder="Poli Umum">
-                    </div>
-                    <div class="diagram">
-                        <button class="button is-success is-rounded is-fullwidth">
-                            Book
-                        </button>
+                        <div class="card-body">
+                            <div v-if="show == 'biodata'">
+                                <biodata ref="form"
+                                    @send-data="getData"
+                                />
+                            </div>
+                            <div v-else>
+                                <showprofile :data="data" />
+                            </div>
+                        </div>
+                        <div class="diagram">
+
+                            <button class="button is-success is-rounded is-fullwidth" style="margin-top: 5%; "
+                                @click="saveData"
+                                :disabled="button"
+                                
+                            >
+                                {{ button ? 'Loading...':buttonTitle }}
+                            </button>
+                        </div>
+                        <div>
                         <a href="Syarat&ketentuan.html" class="has-text-centered" >
                             Syarat & Ketentuan
                         </a>
+                        </div>
+
                     </div>
-                </form>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer is-fullhd is $grey-light	">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Clinic ITK</strong> by <a href="#">Kelompok 4</a>. The source code is powered by 
-            <a href="https://bulma.io">BULMA</a>. <br> <strong>Call :</strong> 1-888-123-4567 / <strong>E-mail :</strong> clinic@itk.ac.id 
-            <br> <strong>Visit Our Location</strong> Jl.Soekarno Hatta Km.15 
-            <br> <strong>@Copyright</strong> By Kelompok 4 - Web Design
-          </p>
-        </div>
-      </footer>
+        <footer class="footer is-fullhd is $grey-light	">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Clinic ITK</strong> by <a href="#">Kelompok 4</a>. The source code is powered by 
+                <a href="https://bulma.io">BULMA</a>. <br> <strong>Call :</strong> 1-888-123-4567 / <strong>E-mail :</strong> clinic@itk.ac.id 
+                <br> <strong>Visit Our Location</strong> Jl.Soekarno Hatta Km.15 
+                <br> <strong>@Copyright</strong> By Kelompok 4 - Web Design
+              </p>
+            </div>
+          </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+                    
+        <script type="text/x-template" id="biodataform">
+                <div class="field">
+                    <label for="" class="label">Nama Lengkap</label>
+                    <div class="control">
+                    <input class="input" type="text" 
+                        placeholder="Nama Lengkap"
+                        v-model="data.nama"
+                        :class="{ 'is-invalid': valName }"
+                        required
+                        >
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="label">NIK</label>
+                    <input type="text" 
+                        class="input" 
+                        v-model="data.NIK"
+                        :class="{ 'is-invalid': valNIK }"
+                        placeholder="NIK"
+                        required
+                        >
+                </div>
+
+                <div class="form-group">
+                <label for="tel" class="label">Nomor HP</label>
+                            <div class="field-body">
+                                <div class="field has-addons">
+                                    <div class="control">
+                                        <a class="button is-static">
+                                        +62
+                                        </a>
+                                    </div>
+                                    <div class="control is-expanded">
+                                        <input id="tel" class="input" 
+                                        type="tel" 
+                                        placeholder="*** (Min.10 Nomor)" 
+                                        required 
+                                        v-model="data.No_HP">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                <div class="form-group">
+                    <label for="" class="label">Tanggal Konsultasi</label>
+                    <input type="date" 
+                        class="input" 
+                        v-model="data.Tgl"
+                        :class="{ 'is-invalid': valTgl }"
+                        placeholder="DD/MM/YYYY"
+                        required
+                        >
+                </div>
+                <div class="form-group">
+                    <label for="" class="label">Kota Asal</label>
+                    <div class="select">
+                        <select
+                        v-model="data.KA"
+                        :class="{ 'is-invalid': valKA }"
+                        >
+                            <option>Balikpapan</option>
+                            <option>Luar Balikpapan</option>
+                        </select placeholder="Balikpapan">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="label">Pilih POLI</label>
+                    <div class="select">
+                        <select
+                        v-model="data.PP"
+                        :class="{ 'is-invalid': valPP }"
+                        >
+                            <option>Poli Umum</option>
+                            <option>Poli Gigi</option>
+                            <option>Poli Kandungan</option>
+                            <option>Poli Anak</option>
+                        </select placeholder="Balikpapan">
+                </div>
+
+
+        </script>
+
+        <script type="text/x-template" id="showform">
+            <div>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>:</td>
+                        <td>{{ data.nama }}</td>
+                    </tr>
+                    <tr>
+                        <th>NIK</th>
+                        <td>:</td>
+                        <td>{{ data.NIK }}</td>
+                    </tr>
+                    <tr>
+                        <th>Nomor HP</th>
+                        <td>:</td>
+                        <td>{{ data.No_HP }}</td>
+                    </tr>
+                    <tr>
+                        <th>Tgl.Konsultasi</th>
+                        <td>:</td>
+                        <td>{{ data.Tgl }}</td>
+                    </tr>
+                    <tr>
+                        <th>Kota Asal</th>
+                        <td>:</td>
+                        <td>{{ data.KA }}</td>
+                    </tr>
+                    <tr>
+                        <th>Pilih POLI</th>
+                        <td>:</td>
+                        <td>{{ data.PP }}</td>
+                    </tr>
+                </table>
+            </div>
+        </script>
+        <script>
+            Vue.component('biodata', {
+                template: '#biodataform',
+                data() {
+                    return {
+                        data: {
+                            nama: '',
+                            NIK: '',
+                            No_HP: '',
+                            Tgl: '',
+                            KA: '',
+                            PP: ''
+                        }
+                    }
+                },
+                mounted() {
+                    this.data = {
+                        nama: '',
+                        NIK: '',
+                        No_HP: '',
+                        Tgl: '',
+                        KA: '',
+                        PP: ''
+                    }
+                },
+                methods: {
+                    submitForm() {
+                        this.$emit('send-data', this.data)
+                    }
+                },
+                computed: {
+                    valName() {
+                        if (this.data.nama.length === 0 || this.data.nama.length > 50) {
+                            return true;
+                        } 
+                        return false;
+                    },
+                    valNIK() {
+                        var number=/^[0-9]+$/;
+                        if (number.test(this.data.NIK)) {
+                            return false;
+                        }
+                        return true;
+                    },
+                    valNo_HP() {
+                        var re=/^[0-9]+$/;
+                        if (re.test(this.data.No_HP)) {
+                            return false;
+                        }
+                        return true;
+                    },
+
+                    // valTgl(){
+                    //     var dateEntered;
+                    //     document.getElementById("dateInput")
+                    //     if (dateEntered.test(this.data.Tgl)) {
+                    //         return false;
+                    //     }
+                    //     return true;
+                    // }
+                }
+            })
+            Vue.component('showprofile', {
+            template: '#showform',
+            props: ['data']
+            })
+
+            new Vue({
+                el: '#dw',
+                data: {
+                    show: 'biodata',
+                    button: false,
+                    buttonTitle: 'BOOK',
+                    data: {}
+                },
+                methods: {
+                    saveData() {
+                    this.button = true
+                    if (this.show == 'biodata' && !this.$refs.form.valName && !this.$refs.form.valNIK && !this.$refs.form.valNo_HP) {
+                        setTimeout(() => {
+                            this.$refs.form.submitForm()
+                            this.show = 'showprofile'
+                            this.buttonTitle = 'Back'
+                            this.button = false
+                        }, 1000)
+                    } else {
+                        setTimeout(() => {
+                            this.data = {}
+                            this.show = 'biodata'
+                            this.button = false
+                            this.buttonTitle = 'BOOK'
+                            // onClick="alert('Permintaan Anda Akan Segera Diproses')"
+                        }, 500)
+                    }
+                },
+                getData(value) {
+                    this.data = {
+                        nama: value.nama,
+                        NIK: value.NIK,
+                        No_HP: value.No_HP,
+                        Tgl: value.Tgl,
+                        KA: value.KA,
+                        PP: value.PP
+                    }
+                }
+            }
+        })
+
+</script>
+
   </body>
 <html>
