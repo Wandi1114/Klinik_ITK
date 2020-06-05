@@ -29,3 +29,94 @@ header .deskripsi {
   font-size: 11pt;
 }
 /*# sourceMappingURL=Index.css.map */
+
+.carousel-wrapper{
+  height: 60vh;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.carousel-item::after{
+  font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 12px;
+    z-index: 3;
+}
+.arrow-prev{
+  left:20px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+  right:20px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background:url('../images/c.jpg');
+    background-size:cover;
+    background-position: center;
+    filter: grayscale(0.3);
+}
+
+.item-2{
+  background:url('../images/a.jpg');
+   background-size:cover;
+   background-position: center;
+   filter: grayscale(0.3);
+}
+.item-3{
+  background:url('../images/b.jpg');
+   background-size:cover;
+   background-position: center;
+   filter: grayscale(0.3);
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
